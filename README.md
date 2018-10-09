@@ -4,4 +4,4 @@ Here is my presentation of Vandelay Industries' auto sales data, based on a samp
 
 The three HTML files represent the three different interactive visuals I have created. The JSON file contains the six data requests pulled from the API, and the Tableau Desktop file contains the background markup for each of the visuals. 
 
-If the user desires to use a different sample data set, they must modify sample_data.json, refresh the live data source in the .twsb file, and republish each of the visuals to the tableau server.
+If the user desires to use a different sample data set, they must modify sample_data.json, refresh the live data source in the .twb file, and republish each of the visuals to the tableau server.
