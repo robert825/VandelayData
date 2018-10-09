@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sales By Country - Vandelay Industries</title>
+
+    <script type="text/javascript" 
+	    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript">
+        function initViz() {
+            var containerDiv = document.getElementById("vizContainer"),
+                url = "http://public.tableau.com/views/test1_1292/SalesbyCountry",
+                options = {
+                    hideTabs: true,
+                    onFirstInteractive: function () {
+                        console.log("Run this code when the viz has finished loading.");
+                    }
+                };
+            
+            var viz = new tableau.Viz(containerDiv, url, options); 
+            // Create a viz object and embed it in the container div.
+        }
+    </script>
+</head>
+
+<body onload="initViz();">
+        Other data presentations: <a href="sales_map.html">Countries Map</a>, <a href="sales_by_vehicle.html">Vehicles Table</a>
+    <h1>Vandelay Industries Sales Data - By Country</h1>
+    <p>This chart presents auto sales data aggregated by import country. 
+        Sort by average sale price, number of vehicles sold, or total revenue for each country.</p>
+
+    <div id="vizContainer" style="width:1000px; height:500px;"></div>    
+</body>
+
+</html>
